@@ -1,0 +1,35 @@
+package com.proyecto.cinegalaxy.auth;
+
+public class AuthResponse {
+
+    private String token;
+    private Long usuarioId;
+    private String nombre;
+    private String apellido;
+    private String email;
+
+    public AuthResponse() {}
+
+    public AuthResponse(String token, Long usuarioId, String nombre, String apellido, String email) {
+        this.token = token;
+        this.usuarioId = usuarioId;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+    }
+
+    public String getToken() { return token; }
+    public void setToken(String token) { this.token = token; }
+
+    public Long getUsuarioId() { return usuarioId; }
+    public void setUsuarioId(Long usuarioId) { this.usuarioId = usuarioId; }
+
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+
+    public String getApellido() { return apellido; }
+    public void setApellido(String apellido) { this.apellido = apellido; }
+
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+}
